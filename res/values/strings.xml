@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iFaceshot</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="pushUp">slide up into the home</string>
+    <string name="logoName">iFaceshot</string>
+    <string name="login_label_username">username</string>
+    <string name="login_username_hint">username</string>
+    <string name="login_label_password">password</string>
+    <string name="login_label_signin">login</string>
+    <string name="login_password_hint">password</string>
+    <string name="login_register_link">        has no account? <a href="http://www.baidu.com">register</a></string>
+    <string name="server_host">http://192.168.0.57</string>
+    <string name="server_port">8888</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="login_error_msg">login failure,error name or password</string>
+
+</resources>

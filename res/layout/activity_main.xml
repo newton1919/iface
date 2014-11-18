@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <LinearLayout
+        android:id="@+id/login_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background_login"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/login_div"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dip"
+            android:background="@drawable/background_login_div_bg"
+            android:padding="15dip" 
+            >
+
+            <TextView
+                android:id="@+id/login_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/login_label_username" />
+
+            <EditText
+                android:id="@+id/username_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_user_input"
+                android:hint="@string/login_username_hint"
+                android:inputType="text"
+                android:singleLine="true" />
+            <!-- 密码 text -->
+
+            <TextView
+                android:id="@+id/login_password_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username_edit"
+                android:layout_marginTop="3dp"
+                android:text="@string/login_label_password" />
+
+            <EditText
+                android:id="@+id/password_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_password_input"
+                android:hint="@string/login_password_hint"
+                android:inputType="textPassword"
+                android:password="true"
+                android:singleLine="true" />
+            <!-- 登录button -->
+
+            <Button
+                android:id="@+id/signin_button"
+                android:layout_width="100dip"
+                android:layout_height="50dip"
+                android:layout_alignRight="@id/password_edit"
+                android:layout_below="@id/password_edit"
+                android:background="@drawable/blue_button"
+                android:text="@string/login_label_signin" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/register_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/login_register_link"
+                android:textColor="#888"
+                android:textColorLink="#FF0066CC" />
+
+            <ImageView
+                android:id="@+id/image_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/ic_launcher" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.faceshot.main.PullDoorView
+        android:id="@+id/myImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ddd" >
+
+        <TextView
+            android:id="@+id/txt_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/logoName"
+            android:textColor="#ffffffff"
+            android:textSize="44sp" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:text="@string/pushUp"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    </com.faceshot.main.PullDoorView>
+
+</FrameLayout>
