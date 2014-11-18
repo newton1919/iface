@@ -27,7 +27,7 @@ public class HomePage extends FragmentActivity {
 	private RadioGroup mTabRg;
 	private ViewPager mViewPage;
 	TabsAdapter mTabsAdapter;
-	private final Class[] fragments = { Fragment3.class, Fragment4.class,
+	private final Class[] fragments = { FragmentTalk.class, FragmentFind.class, FragmentMe.class,
 			 };
 	
 	@Override
@@ -64,13 +64,15 @@ public class HomePage extends FragmentActivity {
 			@Override
 			public void onCheckedChanged(RadioGroup group, int checkedId) {
 				switch (checkedId) {
-				case R.id.tab_rb_3:
+				case R.id.tab_rb_talk:
 					mTabHost.setCurrentTab(0);
 					break;
-				case R.id.tab_rb_4:
+				case R.id.tab_rb_find:
 					mTabHost.setCurrentTab(1);
 					break;
-
+				case R.id.tab_rb_me:
+					mTabHost.setCurrentTab(2);
+					break;
 				default:
 					break;
 				}

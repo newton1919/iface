@@ -14,17 +14,21 @@
         android:id="@+id/tab_rg_menu"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/mmfooter_bg"
         android:orientation="horizontal" >
-
+		<RadioButton
+            android:id="@+id/tab_rb_talk"
+            style="@style/tab_rb_style"
+            android:drawableTop="@drawable/tab_selector_weixing"
+            android:text="对话" />
+		
         <RadioButton
-            android:id="@+id/tab_rb_3"
+            android:id="@+id/tab_rb_find"
             style="@style/tab_rb_style"
             android:drawableTop="@drawable/tab_selector_faxian"
             android:text="发现" />
 
         <RadioButton
-            android:id="@+id/tab_rb_4"
+            android:id="@+id/tab_rb_me"
             style="@style/tab_rb_style"
             android:drawableTop="@drawable/tab_selector_wo"
             android:text="我" />

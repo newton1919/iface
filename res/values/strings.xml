@@ -12,7 +12,7 @@
     <string name="login_label_signin">login</string>
     <string name="login_password_hint">password</string>
     <string name="login_register_link">        has no account? <a href="http://www.baidu.com">register</a></string>
-    <string name="server_host">http://192.168.0.57</string>
+    <string name="server_host">http://192.168.0.71</string>
     <string name="server_port">8888</string>
     <string name="title_activity_home_page">HomePage</string>
     <string name="login_error_msg">login failure,error name or password</string>

@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class Fragment4 extends Fragment {
+public class FragmentMe extends Fragment {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class Fragment4 extends Fragment {
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 //		return super.onCreateView(inflater, container, savedInstanceState);
-		return inflater.inflate(R.layout.fragment4, container, false);
+		return inflater.inflate(R.layout.fragment_me, container, false);
 	}
 
 }
